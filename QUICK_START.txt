@@ -1,0 +1,26 @@
+🚀 YOUR PORTFOLIO IS READY TO LAUNCH!
+
+FASTEST WAY (30 seconds):
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. I've opened Netlify Drop for you
+2. Drag the "dist" folder (I opened it for you) onto the page
+3. DONE! Your site is live instantly!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+FOR GITHUB PAGES (Your personal website):
+
+1. Create repo: https://github.com/new
+   Name: Amruthadr.github.io (exactly this)
+   Make it Public
+
+2. Then run:
+   cd /Users/ramegowda.amrutha/portfolio-website
+   ./launch.sh
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Your built files are ready in:
+/Users/ramegowda.amrutha/portfolio-website/dist
+
