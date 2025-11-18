@@ -80,15 +80,6 @@ const Hero = () => {
     <section id="home" className="hero">
       <div className="container">
         <div className="hero-content">
-          <div className="hero-profile">
-            <div className="profile-image-wrapper">
-              <img 
-                src="/profile-photo.jpg" 
-                alt="Amrutha D Ramegowda" 
-                className="profile-image"
-              />
-            </div>
-          </div>
           <h1 className="hero-title">
             <span className="hero-greeting">Hello, I'm</span>
             <span className="hero-name">Amrutha D Ramegowda</span>
