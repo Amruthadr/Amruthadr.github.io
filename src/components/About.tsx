@@ -36,12 +36,16 @@ const About = () => {
                 </div>
                 <div>
                   <h3>Currently at Apple</h3>
-                  <p>Building test automation that doesn't break (revolutionary concept!)</p>
+                  <p>Designed and built UI automation framework. 98% critical workflow coverage.</p>
                 </div>
               </div>
               <div className="highlight-item">
                 <div className="highlight-icon-wrapper">
-                  <span className="highlight-icon">🚀</span>
+                  <img 
+                    src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/rocket.svg" 
+                    alt="Rocket" 
+                    className="highlight-icon-img"
+                  />
                 </div>
                 <div>
                   <h3>Always Shipping</h3>
@@ -50,10 +54,14 @@ const About = () => {
               </div>
               <div className="highlight-item">
                 <div className="highlight-icon-wrapper">
-                  <span className="highlight-icon">🤝</span>
+                  <img 
+                    src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/messenger.svg" 
+                    alt="Talk & Code" 
+                    className="highlight-icon-img"
+                  />
                 </div>
                 <div>
-                  <h3>Quality & Code</h3>
+                  <h3>Talk & Code</h3>
                   <p>Always up for tech talks, code reviews, or debates about test strategies</p>
                 </div>
               </div>

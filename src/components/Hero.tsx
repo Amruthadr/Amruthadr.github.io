@@ -32,7 +32,7 @@ const Hero = () => {
       animateCounter(5, 'frameworks');
       animateCounter(2500, 'tests');
       animateCounter(92, 'coverage');
-      animateCounter(300, 'endpoints');
+      animateCounter(1000, 'endpoints');
       animateCounter(60, 'suites');
     }, 500);
 
@@ -52,6 +52,7 @@ const Hero = () => {
 
   const topTechnologies = [
     { name: 'Playwright', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/playwright.svg' },
+    { name: 'Cypress', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/cypress.svg' },
     { name: 'Selenium', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/selenium.svg' },
     { name: 'Rest-Assured', icon: restAssuredIcon },
     { name: 'Python', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/python.svg' },
@@ -64,16 +65,16 @@ const Hero = () => {
   ];
 
   const competencies = [
-    'Enterprise-Scale Automation',
-    'Quality Engineering',
-    'Cross-Functional Leadership',
-    'CI/CD Optimization',
-    'Test Framework Architecture',
-    'Performance Testing',
-    'API Testing & Validation',
-    'Team Mentoring',
-    'Agile Methodology',
-    'DevOps Integration'
+    'Test Strategy & Architecture',
+    'Quality Engineering Leadership',
+    'Technical Leadership',
+    'Continuous Quality Engineering',
+    'Scalable Test Infrastructure',
+    'Performance Engineering',
+    'API & Integration Testing',
+    'Team Development & Mentoring',
+    'Agile Test Engineering',
+    'DevOps & Quality Integration'
   ];
 
   return (
@@ -86,7 +87,7 @@ const Hero = () => {
             <span className="hero-role">Senior SDET</span>
           </h1>
             <p className="hero-description">
-              Specializing in enterprise-scale test automation frameworks using Playwright, Selenium, Rest-Assured, and JMeter. Architecting CI/CD-integrated solutions at Apple that enable parallel execution, reduce regression cycles, and improve test coverage.
+              Senior SDET specializing in enterprise-scale test automation frameworks (Playwright, Cypress, Selenium, Rest-Assured, JMeter), CI/CD pipeline optimization, DevOps integration, performance testing, and Agile methodology. Architecting scalable solutions at Apple that enable parallel execution, reduce regression cycles, and improve test coverage.
             </p>
           <div className="hero-cta">
             <a href="#contact" className="btn btn-primary">
