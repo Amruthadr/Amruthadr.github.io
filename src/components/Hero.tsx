@@ -60,7 +60,6 @@ const Hero = () => {
     { name: 'TypeScript', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/typescript.svg' },
     { name: 'JMeter', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/apachejmeter.svg' },
     { name: 'Jenkins', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/jenkins.svg' },
-    { name: 'Docker', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/docker.svg' },
     { name: 'Postman', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/postman.svg' }
   ];
 
@@ -81,6 +80,15 @@ const Hero = () => {
     <section id="home" className="hero">
       <div className="container">
         <div className="hero-content">
+          <div className="hero-profile">
+            <div className="profile-image-wrapper">
+              <img 
+                src="/profile-photo.jpg" 
+                alt="Amrutha D Ramegowda" 
+                className="profile-image"
+              />
+            </div>
+          </div>
           <h1 className="hero-title">
             <span className="hero-greeting">Hello, I'm</span>
             <span className="hero-name">Amrutha D Ramegowda</span>
