@@ -33,7 +33,7 @@ const Skills = () => {
     },
     {
       title: 'CI/CD & DevOps Tools',
-      skills: ['Jenkins', 'Git', 'Docker', 'Kubernetes', 'Agile/Scrum', 'TDD', 'BDD', 'Jira', 'Confluence'],
+      skills: ['Jenkins', 'Git', 'Docker', 'Kubernetes', 'Rio', 'Agile/Scrum', 'TDD', 'BDD', 'Jira', 'Confluence'],
     },
     {
       title: 'Other',
@@ -59,7 +59,7 @@ const Skills = () => {
               <div className="skill-tags">
                 {category.skills.map((skill, skillIndex) => (
                   <span key={skillIndex} className="skill-tag">
-                    {skill}
+                    <span>{skill}</span>
                   </span>
                 ))}
               </div>

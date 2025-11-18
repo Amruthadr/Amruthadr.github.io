@@ -26,7 +26,7 @@ const Experience = () => {
       ],
     },
     {
-      company: 'Adobe',
+      company: 'XLscout Xlpat LLC',
       role: 'Software Test Engineer',
       location: 'Bangalore, India',
       period: '01/2021 – 07/2022',
@@ -42,7 +42,7 @@ const Experience = () => {
       ],
     },
     {
-      company: 'IBM',
+      company: 'IPpro Services India',
       role: 'Quality Assurance Engineer',
       location: 'Bangalore, India',
       period: '09/2016 – 12/2020',
@@ -92,4 +92,3 @@ const Experience = () => {
 };
 
 export default Experience;
-

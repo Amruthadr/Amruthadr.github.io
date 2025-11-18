@@ -7,8 +7,9 @@ const Contact = () => {
         <h2 className="section-title">Get In Touch</h2>
         <div className="contact-content">
           <p className="contact-intro">
-            I'm always interested in hearing about new opportunities, innovative projects, or
-            just having a chat about test automation and quality engineering.
+            I'm open to discussing challenging opportunities, innovative projects, and collaborations 
+            in test automation and quality engineering. Whether you're building the next generation 
+            of software or looking to elevate your quality engineering practices, I'd love to connect.
           </p>
           <div className="contact-info">
             <div className="contact-item">
@@ -37,24 +38,11 @@ const Contact = () => {
               <div>
                 <h3>LinkedIn</h3>
                 <a
-                  href="https://linkedin.com/amrutha-dr"
+                  href="https://www.linkedin.com/in/amrutha-dr/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  linkedin.com/amrutha-dr
-                </a>
-              </div>
-            </div>
-            <div className="contact-item">
-              <span className="contact-icon">🐙</span>
-              <div>
-                <h3>GitHub</h3>
-                <a
-                  href="https://github.com/Amruthadr"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  github.com/Amruthadr
+                  linkedin.com/in/amrutha-dr
                 </a>
               </div>
             </div>
