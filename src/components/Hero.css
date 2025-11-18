@@ -44,6 +44,100 @@
   }
 }
 
+.animated-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.floating-shape {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(40px);
+  opacity: 0.6;
+  animation: float 20s infinite ease-in-out;
+}
+
+.shape-1 {
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.4) 0%, rgba(139, 92, 246, 0.4) 100%);
+  top: 10%;
+  left: 10%;
+  animation-duration: 25s;
+  animation-delay: 0s;
+}
+
+.shape-2 {
+  width: 250px;
+  height: 250px;
+  background: linear-gradient(135deg, rgba(236, 72, 153, 0.4) 0%, rgba(251, 146, 60, 0.4) 100%);
+  top: 60%;
+  right: 15%;
+  animation-duration: 30s;
+  animation-delay: 2s;
+}
+
+.shape-3 {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.3) 0%, rgba(236, 72, 153, 0.3) 100%);
+  bottom: 20%;
+  left: 20%;
+  animation-duration: 35s;
+  animation-delay: 4s;
+}
+
+.shape-4 {
+  width: 180px;
+  height: 180px;
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.35) 0%, rgba(99, 102, 241, 0.35) 100%);
+  top: 30%;
+  right: 30%;
+  animation-duration: 28s;
+  animation-delay: 1s;
+}
+
+.shape-5 {
+  width: 220px;
+  height: 220px;
+  background: linear-gradient(135deg, rgba(251, 146, 60, 0.3) 0%, rgba(236, 72, 153, 0.3) 100%);
+  bottom: 10%;
+  right: 10%;
+  animation-duration: 32s;
+  animation-delay: 3s;
+}
+
+.shape-6 {
+  width: 160px;
+  height: 160px;
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.25) 0%, rgba(139, 92, 246, 0.25) 100%);
+  top: 50%;
+  left: 5%;
+  animation-duration: 27s;
+  animation-delay: 5s;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  25% {
+    transform: translate(50px, -50px) scale(1.1);
+  }
+  50% {
+    transform: translate(-30px, 30px) scale(0.9);
+  }
+  75% {
+    transform: translate(40px, 40px) scale(1.05);
+  }
+}
+
 .hero-content {
   text-align: center;
   max-width: 1200px;
@@ -369,6 +463,16 @@
 }
 
 @media (max-width: 768px) {
+  .floating-shape {
+    filter: blur(30px);
+    opacity: 0.4;
+  }
+
+  .shape-1, .shape-2, .shape-3, .shape-4, .shape-5, .shape-6 {
+    width: 120px;
+    height: 120px;
+  }
+
   .hero-name {
     font-size: 2.5rem;
   }
