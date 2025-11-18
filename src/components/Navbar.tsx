@@ -37,7 +37,12 @@ const Navbar = () => {
       <div className="container">
         <div className="navbar-content">
           <a href="#home" className="navbar-logo" onClick={(e) => handleNavClick(e, '#home')}>
-            Amrutha D Ramegowda
+            <img 
+              src="/profile-photo-nav.jpg" 
+              alt="Amrutha D Ramegowda" 
+              className="navbar-profile-photo"
+            />
+            <span>Amrutha D Ramegowda</span>
           </a>
           <button
             className="mobile-menu-toggle"
