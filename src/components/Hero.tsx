@@ -11,6 +11,34 @@ const Hero = () => {
     frameworks: 0,
   });
 
+  const [particles, setParticles] = useState<Array<{ id: number; x: number; y: number; size: number; speedX: number; speedY: number }>>([]);
+
+  useEffect(() => {
+    const particleCount = 50;
+    const newParticles = Array.from({ length: particleCount }, (_, i) => ({
+      id: i,
+      x: Math.random() * 100,
+      y: Math.random() * 100,
+      size: Math.random() * 3 + 1,
+      speedX: (Math.random() - 0.5) * 0.5,
+      speedY: (Math.random() - 0.5) * 0.5,
+    }));
+    setParticles(newParticles);
+
+    const animateParticles = () => {
+      setParticles((prev) =>
+        prev.map((particle) => ({
+          ...particle,
+          x: (particle.x + particle.speedX + 100) % 100,
+          y: (particle.y + particle.speedY + 100) % 100,
+        }))
+      );
+    };
+
+    const interval = setInterval(animateParticles, 50);
+    return () => clearInterval(interval);
+  }, []);
+
   useEffect(() => {
     const animateCounter = (target: number, key: keyof typeof counters, duration: number = 2000) => {
       const start = 0;
@@ -78,10 +106,20 @@ const Hero = () => {
 
   return (
     <section id="home" className="hero">
-      <div className="animated-background">
-        <div className="gradient-orb orb-1"></div>
-        <div className="gradient-orb orb-2"></div>
-        <div className="gradient-orb orb-3"></div>
+      <div className="animated-gradient-mesh"></div>
+      <div className="particle-system">
+        {particles.map((particle) => (
+          <div
+            key={particle.id}
+            className="particle"
+            style={{
+              left: `${particle.x}%`,
+              top: `${particle.y}%`,
+              width: `${particle.size}px`,
+              height: `${particle.size}px`,
+            }}
+          />
+        ))}
       </div>
       <div className="container">
         <div className="hero-content">
